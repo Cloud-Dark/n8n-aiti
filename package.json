@@ -1,17 +1,18 @@
 {
-  "name": "n8n-nodes-aiti",
+  "name": "n8n-nodes-aiti-ai",
   "version": "1.0.0",
-  "description": "n8n node for AITI AI Backend",
+  "description": "n8n nodes for AITI AI Backend (Core, OCR, and Training)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "n8n-community-node-package"
   ],
-  "author": "Syahdan",
+  "author": "Cloud-Dark",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -28,5 +29,8 @@
     "credentials": [
       "dist/credentials/AitiApi.credentials.js"
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

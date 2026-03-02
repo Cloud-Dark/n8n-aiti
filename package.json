@@ -1,6 +1,6 @@
 {
-  "name": "n8n-nodes-aiti-ai",
-  "version": "1.0.0",
+  "name": "@cloud-dark/n8n-nodes-aiti-ai",
+  "version": "1.0.1",
   "description": "n8n nodes for AITI AI Backend (Core, OCR, and Training)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,16 +14,18 @@
   ],
   "author": "Cloud-Dark",
   "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "n8n-workflow": "^1.0.0",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "n8n-workflow": "*",
-    "n8n-core": "*"
+    "n8n-workflow": "*"
   },
-
   "n8n": {
     "nodes": [
       "dist/nodes/AitiCore/AitiCore.node.js",
@@ -35,6 +37,7 @@
     ]
   },
   "files": [
-    "dist"
+    "dist",
+    "nodes/**/*.svg"
   ]
 }

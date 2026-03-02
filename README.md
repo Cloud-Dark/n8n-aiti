@@ -1,4 +1,4 @@
-# n8n-nodes-aiti-ai
+# @cloud-dark/n8n-nodes-aiti-ai
 
 This is an n8n community node that allows you to interact with the AITI AI Backend. It provides a suite of nodes for Chat, RAG (Retrieval Augmented Generation), OCR, and Training.
 
@@ -26,13 +26,13 @@ This is an n8n community node that allows you to interact with the AITI AI Backe
 ### For n8n UI users
 1. Go to **Settings > Community Nodes**.
 2. Click **Install a node**.
-3. Enter `n8n-nodes-aiti-ai` (or the name you published).
+3. Enter `@cloud-dark/n8n-nodes-aiti-ai`.
 4. Click **Install**.
 
 ### For manual installation
 In your n8n root directory:
 ```bash
-npm install n8n-nodes-aiti-ai
+npm install @cloud-dark/n8n-nodes-aiti-ai
 ```
 
 ## Credentials

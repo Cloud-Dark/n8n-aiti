@@ -14,12 +14,16 @@
   ],
   "author": "Cloud-Dark",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.0.0",
     "n8n-workflow": "^1.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.0"
   },
+  "peerDependencies": {
+    "n8n-workflow": "*",
+    "n8n-core": "*"
+  },
+
   "n8n": {
     "nodes": [
       "dist/nodes/AitiCore/AitiCore.node.js",

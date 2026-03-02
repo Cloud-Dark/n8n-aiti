@@ -239,7 +239,7 @@ export class AitiTraining implements INodeType {
 						pairedItem: i,
 					});
 				}
-			} catch (error) {
+			} catch (error: any) {
 				if (this.continueOnFail()) {
 					returnData.push({
 						json: {

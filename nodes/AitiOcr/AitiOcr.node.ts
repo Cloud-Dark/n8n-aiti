@@ -187,7 +187,7 @@ ${ocrText}`,
 					json: finalResult,
 					pairedItem: i,
 				});
-			} catch (error) {
+			} catch (error: any) {
 				if (this.continueOnFail()) {
 					returnData.push({
 						json: {

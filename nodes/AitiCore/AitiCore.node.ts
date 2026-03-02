@@ -7,10 +7,10 @@ import {
 	ILoadOptionsFunctions,
 } from 'n8n-workflow';
 
-export class Aiti implements INodeType {
+export class AitiCore implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'AITI AI',
-		name: 'aiti',
+		displayName: 'AITI Core',
+		name: 'aitiCore',
 		icon: 'file:aiti.svg',
 		group: ['transform'],
 		version: 1,

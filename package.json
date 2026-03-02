@@ -1,11 +1,11 @@
 {
   "name": "@cloud-dark/n8n-nodes-aiti-ai",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "n8n nodes for AITI AI Backend (Core, OCR, and Training)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp nodes/**/*.svg dist/nodes/ && cp credentials/*.svg dist/credentials/ || true",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
@@ -37,7 +37,6 @@
     ]
   },
   "files": [
-    "dist",
-    "nodes/**/*.svg"
+    "dist"
   ]
 }
